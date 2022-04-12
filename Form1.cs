@@ -12,6 +12,7 @@ namespace feud_final
 {
     public partial class Form1 : Form
     {
+        int time = 60;
         public Form1()
         {
             InitializeComponent();
@@ -69,6 +70,25 @@ namespace feud_final
             else if (answer == "england")
             {
                 button10.BackgroundImage = Properties.Resources.eng;
+            }
+            else if (answer == "canada")
+            {
+                MessageBox.Show("Sorry Canada was not one of the first teams to qualify");
+            }
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            label3.Text = time.ToString();
+            time--;
+           if (time == 0)
+            {
+                timer1.Stop();
             }
         }
     }
