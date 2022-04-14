@@ -35,55 +35,64 @@ namespace feud_final
             {
                 button4.BackgroundImage = Properties.Resources.germ__1_;
                 button4.Text = "";
-                score = score + 10;
+                label6.Text = score.ToString();
+
             }
             //denmark
             else if (answer == "denmark")
             {
                 button6.BackgroundImage = Properties.Resources.denmark;
                 button6.Text = "";
+                label6.Text = score.ToString();
             }
             //brazil
             else if (answer == "brazil")
             {
                 button8.BackgroundImage = Properties.Resources.bra;
                 button8.Text = "";
+                label6.Text = score.ToString();
             }
             //france
             else if (answer == "france")
             {
                 button9.BackgroundImage = Properties.Resources.fra;
                 button9.Text = "";
+                label6.Text = score.ToString();
             }
             //belgium
             else if (answer == "belgium")
             {
                 button2.BackgroundImage = Properties.Resources.belgium;
                 button2.Text = "";
+                label6.Text = score.ToString();
             }
             //croatia
             else if (answer == "croatia")
             {
                 button3.BackgroundImage = Properties.Resources.croatia;
                 button3.Text = "";
+                label6.Text = score.ToString();
             }
             //spain
             else if (answer == "spain")
             {
                 button5.BackgroundImage = Properties.Resources.spain;
                 button5.Text = "";
+                label6.Text = score.ToString();
             }
             //serbia
             else if (answer == "serbia")
             {
                 button7.BackgroundImage = Properties.Resources.denmark;
                 button7.Text = "";
+                label6.Text = score.ToString();
             }
             //eng
             else if (answer == "england")
             {
                 button10.BackgroundImage = Properties.Resources.eng;
                 button10.Text = "";
+                label6.Text = score.ToString();
             }
             else if (answer == "canada")
             {
