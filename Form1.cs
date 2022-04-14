@@ -13,7 +13,7 @@ namespace feud_final
     public partial class Form1 : Form
     {
         int time = 60;
-
+        int score = 0;
         public Form1()
         {
             InitializeComponent();
@@ -21,18 +21,21 @@ namespace feud_final
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
+            score = score + 10;
             //answer button soccer ball
             string answer = textBox1.Text.ToLower();
             if (answer == "qatar")
             {
                 button1.BackgroundImage = Properties.Resources._16488348581803__1_;
                 button1.Text = "";
+                label6.Text = score.ToString();
             }
             // germany
             else if (answer == "germany")
             {
                 button4.BackgroundImage = Properties.Resources.germ__1_;
                 button4.Text = "";
+                score = score + 10;
             }
             //denmark
             else if (answer == "denmark")
@@ -123,6 +126,11 @@ namespace feud_final
         }
 
         private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
         {
 
         }

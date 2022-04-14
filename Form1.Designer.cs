@@ -275,11 +275,11 @@
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Black;
-            this.label4.Font = new System.Drawing.Font("Euclid", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label4.Location = new System.Drawing.Point(568, 316);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(111, 55);
+            this.label4.Size = new System.Drawing.Size(104, 37);
             this.label4.TabIndex = 9;
             this.label4.Text = "Timer";
             this.label4.Click += new System.EventHandler(this.label4_Click);
@@ -293,24 +293,25 @@
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label5.Font = new System.Drawing.Font("Euclid", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label5.Location = new System.Drawing.Point(586, 224);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(93, 46);
+            this.label5.Size = new System.Drawing.Size(99, 31);
             this.label5.TabIndex = 10;
             this.label5.Text = "Score:";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Euclid", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label6.ForeColor = System.Drawing.Color.Black;
             this.label6.Location = new System.Drawing.Point(687, 224);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(33, 46);
+            this.label6.Size = new System.Drawing.Size(30, 31);
             this.label6.TabIndex = 11;
             this.label6.Text = "0";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // Form1
             // 
