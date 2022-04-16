@@ -52,10 +52,18 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.button11 = new System.Windows.Forms.Button();
+            this.button12 = new System.Windows.Forms.Button();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -83,7 +91,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(685, 2);
+            this.pictureBox2.Location = new System.Drawing.Point(420, 7);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(135, 84);
             this.pictureBox2.TabIndex = 2;
@@ -170,6 +178,7 @@
             // button9
             // 
             this.button9.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.button9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button9.Font = new System.Drawing.Font("Century", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button9.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.button9.Location = new System.Drawing.Point(87, 436);
@@ -182,6 +191,7 @@
             // button3
             // 
             this.button3.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button3.Font = new System.Drawing.Font("Century", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button3.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.button3.Location = new System.Drawing.Point(306, 223);
@@ -250,10 +260,11 @@
             // 
             // pictureBox4
             // 
+            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
             this.pictureBox4.Location = new System.Drawing.Point(568, 299);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(239, 183);
+            this.pictureBox4.Size = new System.Drawing.Size(239, 178);
             this.pictureBox4.TabIndex = 7;
             this.pictureBox4.TabStop = false;
             this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
@@ -295,7 +306,7 @@
             this.label5.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label5.Location = new System.Drawing.Point(586, 224);
+            this.label5.Location = new System.Drawing.Point(562, 224);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(99, 31);
             this.label5.TabIndex = 10;
@@ -306,12 +317,73 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(687, 224);
+            this.label6.Location = new System.Drawing.Point(666, 224);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(30, 31);
             this.label6.TabIndex = 11;
             this.label6.Text = "0";
             this.label6.Click += new System.EventHandler(this.label6_Click);
+            // 
+            // button11
+            // 
+            this.button11.BackColor = System.Drawing.Color.Maroon;
+            this.button11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button11.Font = new System.Drawing.Font("Century", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button11.ForeColor = System.Drawing.Color.White;
+            this.button11.Location = new System.Drawing.Point(671, 7);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(151, 50);
+            this.button11.TabIndex = 4;
+            this.button11.Text = "EXIT";
+            this.button11.UseVisualStyleBackColor = false;
+            this.button11.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button12
+            // 
+            this.button12.BackColor = System.Drawing.Color.Maroon;
+            this.button12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button12.Font = new System.Drawing.Font("Century", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button12.ForeColor = System.Drawing.Color.White;
+            this.button12.Location = new System.Drawing.Point(738, 219);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(88, 44);
+            this.button12.TabIndex = 4;
+            this.button12.Text = "No Answer";
+            this.button12.UseVisualStyleBackColor = false;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.BackColor = System.Drawing.Color.DarkRed;
+            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
+            this.pictureBox5.Location = new System.Drawing.Point(581, 257);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(49, 45);
+            this.pictureBox5.TabIndex = 12;
+            this.pictureBox5.TabStop = false;
+            this.pictureBox5.Visible = false;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.BackColor = System.Drawing.Color.Maroon;
+            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
+            this.pictureBox6.Location = new System.Drawing.Point(636, 257);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(49, 45);
+            this.pictureBox6.TabIndex = 12;
+            this.pictureBox6.TabStop = false;
+            this.pictureBox6.Visible = false;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.BackColor = System.Drawing.Color.Maroon;
+            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
+            this.pictureBox7.Location = new System.Drawing.Point(690, 257);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(49, 45);
+            this.pictureBox7.TabIndex = 12;
+            this.pictureBox7.TabStop = false;
+            this.pictureBox7.Visible = false;
             // 
             // Form1
             // 
@@ -320,6 +392,11 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(832, 508);
+            this.Controls.Add(this.pictureBox7);
+            this.Controls.Add(this.pictureBox6);
+            this.Controls.Add(this.pictureBox5);
+            this.Controls.Add(this.button12);
+            this.Controls.Add(this.button11);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -348,6 +425,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -377,6 +457,11 @@
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.PictureBox pictureBox7;
     }
 }
 

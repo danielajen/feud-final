@@ -123,6 +123,16 @@ namespace feud_final.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap download {
+            get {
+                object obj = ResourceManager.GetObject("download", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap eng {
             get {
                 object obj = ResourceManager.GetObject("eng", resourceCulture);
@@ -156,6 +166,26 @@ namespace feud_final.Properties {
         internal static System.Drawing.Bitmap spain {
             get {
                 object obj = ResourceManager.GetObject("spain", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap whistle_1485604__1_ {
+            get {
+                object obj = ResourceManager.GetObject("whistle-1485604 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap whistle_final {
+            get {
+                object obj = ResourceManager.GetObject("whistle final", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
