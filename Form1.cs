@@ -15,6 +15,7 @@ namespace feud_final
         int time = 60;
         int score = 0;
         int lives = 3;
+        bool a1 = false, a2 = false, a3 = false, a4 = false, a5 = false, a6 = false, a7 = false, a8 = false, a9 = false, a10 = false; 
         public Form1()
         {
             InitializeComponent();
@@ -27,121 +28,227 @@ namespace feud_final
             string answer = textBox1.Text.ToLower();
             if (answer == "qatar")
             {
-                button1.BackgroundImage = Properties.Resources._16488348581803__1_;
-                button1.Text = "";
-                label6.Text = score.ToString();
-                MessageBox.Show("Great Job! You gained 100 points");
-                textBox1.Clear();
+                if (a1 == false)
+                {
+                    button1.BackgroundImage = Properties.Resources._16488348581803__1_;
+                    button1.Text = "";
+                    label6.Text = score.ToString();
+                    MessageBox.Show("Great Job! You gained 100 points");
+                    textBox1.Clear();
+                    a1 = true;
+                }
+                else
+                {
+                    MessageBox.Show("You already entered this");
+                    textBox1.Clear();
+                }
 
             }
             // germany
             else if (answer == "germany")
             {
-                button4.BackgroundImage = Properties.Resources.germ__1_;
-                button4.Text = "";
-                label6.Text = score.ToString();
-                MessageBox.Show("Great Job! You gained 100 points");
-                textBox1.Clear();
+                if (a2 == false)
+                {
+                    button4.BackgroundImage = Properties.Resources.germ__1_;
+                    button4.Text = "";
+                    label6.Text = score.ToString();
+                    MessageBox.Show("Great Job! You gained 100 points");
+                    textBox1.Clear();
+                    a2 = true;
+                }
+                else
+                {
+                    MessageBox.Show("You already entered this");
+                    textBox1.Clear();
+                }
 
             }
             //denmark
-            else if (answer == "denmark")
+          else if (answer == "denmark")
             {
-                button6.BackgroundImage = Properties.Resources.denmark;
-                button6.Text = "";
-                label6.Text = score.ToString();
-                MessageBox.Show("Great Job! You gained 100 points");
-                textBox1.Clear();
+                if (a3 == false)
+                {
+                    button6.BackgroundImage = Properties.Resources.denmark;
+                    button6.Text = "";
+                    label6.Text = score.ToString();
+                    MessageBox.Show("Great Job! You gained 100 points");
+                    textBox1.Clear();
+                    a3 = true;
+                }
+                else
+                {
+                    MessageBox.Show("You already entered this");
+                    textBox1.Clear();
+                }
             }
+
             //brazil
-            else if (answer == "brazil")
+          else if (answer == "brazil")
             {
-                button8.BackgroundImage = Properties.Resources.bra;
-                button8.Text = "";
-                label6.Text = score.ToString();
-                MessageBox.Show("Great Job! You gained 100 points");
-                textBox1.Clear();
+                if (a4 == false)
+                {
+                    button8.BackgroundImage = Properties.Resources.bra;
+                    button8.Text = "";
+                    label6.Text = score.ToString();
+                    MessageBox.Show("Great Job! You gained 100 points");
+                    textBox1.Clear();
+                    a4 = true;
+                }
+                else
+                {
+                    MessageBox.Show("You already entered this");
+                    textBox1.Clear();
+                }
             }
             //france
-            else if (answer == "france")
+          else if (answer == "france")
             {
-                button9.BackgroundImage = Properties.Resources.fra;
-                button9.Text = "";
-                label6.Text = score.ToString();
-                MessageBox.Show("Great Job! You gained 100 points");
-                textBox1.Clear();
+                if (a5 == false)
+                {
+                    button9.BackgroundImage = Properties.Resources.fra;
+                    button9.Text = "";
+                    label6.Text = score.ToString();
+                    MessageBox.Show("Great Job! You gained 100 points");
+                    textBox1.Clear();
+                    a5 = true;
+                }
+                else
+                {
+                    MessageBox.Show("You already entered this");
+                    textBox1.Clear();
+                }
             }
             //belgium
-            else if (answer == "belgium")
+         else  if (answer == "belgium")
             {
-                button2.BackgroundImage = Properties.Resources.belgium;
-                button2.Text = "";
-                label6.Text = score.ToString();
-                MessageBox.Show("Great Job! You gained 100 points");
-                textBox1.Clear();
+                if (a6 == false)
+                {
+                    button2.BackgroundImage = Properties.Resources.belgium;
+                    button2.Text = "";
+                    label6.Text = score.ToString();
+                    MessageBox.Show("Great Job! You gained 100 points");
+                    textBox1.Clear();
+                    a6 = true;
+                }
+                else
+                {
+                    MessageBox.Show("You already entered this");
+                    textBox1.Clear();
+                }
             }
             //croatia
-            else if (answer == "croatia")
+         else if (answer == "croatia")
             {
-                button3.BackgroundImage = Properties.Resources.croatia;
-                button3.Text = "";
-                label6.Text = score.ToString();
-                MessageBox.Show("Great Job! You gained 100 points");
-                textBox1.Clear();
+                if (a7 == false)
+                {
+                    button3.BackgroundImage = Properties.Resources.croatia;
+                    button3.Text = "";
+                    label6.Text = score.ToString();
+                    MessageBox.Show("Great Job! You gained 100 points");
+                    textBox1.Clear();
+                    a7 = true;
+                }
+                else
+                {
+                    MessageBox.Show("You already entered this");
+                    textBox1.Clear();
+                }
             }
             //spain
-            else if (answer == "spain")
+          else if (answer == "spain")
             {
-                button5.BackgroundImage = Properties.Resources.spain;
-                button5.Text = "";
-                label6.Text = score.ToString();
-                MessageBox.Show("Great Job! You gained 100 points");
-                textBox1.Clear();
+                if (a8 == false)
+                {
+                    button5.BackgroundImage = Properties.Resources.spain;
+                    button5.Text = "";
+                    label6.Text = score.ToString();
+                    MessageBox.Show("Great Job! You gained 100 points");
+                    textBox1.Clear();
+                    a8 = true;
+                }
+                else
+                {
+                    MessageBox.Show("You already entered this");
+                    textBox1.Clear();
+                }
             }
             //serbia
-            else if (answer == "serbia")
+          else if (answer == "serbia")
             {
-                button7.BackgroundImage = Properties.Resources._16488348581803__2___2_;
-                button7.Text = "";
-                label6.Text = score.ToString();
-                MessageBox.Show("Great Job! You gained 100 points");
-                textBox1.Clear();
+                if (a9 == false)
+                {
+                    button7.BackgroundImage = Properties.Resources._16488348581803__2___2_;
+                    button7.Text = "";
+                    label6.Text = score.ToString();
+                    MessageBox.Show("Great Job! You gained 100 points");
+                    textBox1.Clear();
+                    a9 = true;
+                }
+                else
+                {
+                    MessageBox.Show("You already entered this");
+                    textBox1.Clear();
+                }
             }
             //eng
-            else if (answer == "england")
+           else if (answer == "england")
             {
-                button10.BackgroundImage = Properties.Resources.eng;
-                button10.Text = "";
-                label6.Text = score.ToString();
-                MessageBox.Show("Great Job! You gained 100 points");
-                textBox1.Clear();
+                if (a10 == false)
+                {
+                    button10.BackgroundImage = Properties.Resources.eng;
+                    button10.Text = "";
+                    label6.Text = score.ToString();
+                    MessageBox.Show("Great Job! You gained 100 points");
+                    textBox1.Clear();
+                    a10 = true;
+                }
+                else
+                {
+                    MessageBox.Show("You already entered this");
+                    textBox1.Clear();
+                }
             }
-            if (!(answer == "england" || answer == "belgium" || answer == "germany" || answer == "qatar" || answer == "denmark" || answer == "belgium" || answer == "brazil" || answer == "france" || answer == "serbia" || answer == "spain" || answer == "croatia" || lives == 2))
-            {
-                lives = lives - 1;
-                pictureBox5.Visible = true;
-                MessageBox.Show("Incorrect. One X! If you get two more you lose!");
-                textBox1.Clear();
-            }
-            else if(!(answer == "england" || answer == "belgium" || answer == "germany" || answer == "qatar" || answer == "denmark" || answer == "belgium" || answer == "brazil" || answer == "france" || answer == "serbia" || answer == "spain" || answer == "croatia" || lives == 1))
-            {
-                lives = lives - 1;
-                pictureBox6.Visible = true;
-                MessageBox.Show("Incorrect. Two X! If you get one more you lose!");
-                textBox1.Clear();
-            }
-            else if(!(answer == "england" || answer == "belgium" || answer == "germany" || answer == "qatar" || answer == "denmark" || answer == "belgium" || answer == "brazil" || answer == "france" || answer == "serbia" || answer == "spain" || answer == "croatia" || lives <= 0))
-            {
-                lives = lives - 1;
-                pictureBox7.Visible = true;
-                MessageBox.Show("Incorrect. You lose! No Free World Cup Tickets or first class flights for you pal. Try again next time!");
-                this.Close();
-            }
+
+
+            // winning the game score thing
             if (score >= 1000)
             {
-                MessageBox.Show("Great Job! You won the game! You got all the questions right and will recieve 10 free tickets to all the World Cup Games in Qatar this December! You will also recieve first class plane tickets to & from Qatar. Thank you for playing Family Feud World Cup Edition! See you soon");
-                this.Close();
+                MessageBox.Show("CONGRATS, YOU WON! You just got all the questions right! You now earned yourself free first class tickets to all the World Cup Games in Qatar this November! See you soon!");
             }
+
+
+            else
+            // incorrect answers (x)
+            {
+                lives = lives - 1;
+               if (lives == 2)
+                {
+                    textBox1.Clear();
+                    pictureBox5.Visible = true;
+                    MessageBox.Show("Incorrect. One X! If you get two more you lose!");
+
+                }
+                 else if (lives == 1)
+                {
+                    textBox1.Clear();
+                    pictureBox6.Visible = true;
+                    MessageBox.Show("Incorrect. You now have Two X's! If you get one more you lose!");
+                }
+                 else if (lives == 0)
+                {
+                    textBox1.Clear();
+                    pictureBox7.Visible = true;
+                    MessageBox.Show("Incorrect. HAHA, YOU LOST! Better Luck Next Time! You really lost the oppurtunity to go to the World Cup in Qatar for free! ");
+                    this.Close();
+                }
+            }
+
+
+
+
+
+
+
         }
 
         private void label3_Click(object sender, EventArgs e)
@@ -199,15 +306,17 @@ namespace feud_final
         {
             //no answer x's
             lives = lives - 1;
-            if (lives == 2)
+             if (lives == 2)
             {
                 pictureBox5.Visible = true;
                 MessageBox.Show("HAHA! One X! TWO MORE AND YOU LOSE!");
+                textBox1.Clear();
             }
             else if (lives == 1)
             {
                 pictureBox6.Visible = true;
                 MessageBox.Show("HAHA! TWO X's! ONE MORE AND YOU LOSE!");
+                textBox1.Clear();
             }
              else if (lives <= 0)
             {
@@ -216,6 +325,11 @@ namespace feud_final
                 this.Close();
             }
             }
+
+        private void pictureBox7_Click(object sender, EventArgs e)
+        {
+
         }
+    }
     }
 
