@@ -41,6 +41,7 @@ namespace feud_final
                 {
                     MessageBox.Show("You already entered this");
                     textBox1.Clear();
+                    score = score - 100;
                 }
 
             }
@@ -60,6 +61,7 @@ namespace feud_final
                 {
                     MessageBox.Show("You already entered this");
                     textBox1.Clear();
+                    score = score - 100;
                 }
 
             }
@@ -79,6 +81,7 @@ namespace feud_final
                 {
                     MessageBox.Show("You already entered this");
                     textBox1.Clear();
+                    score = score - 100;
                 }
             }
 
@@ -98,6 +101,7 @@ namespace feud_final
                 {
                     MessageBox.Show("You already entered this");
                     textBox1.Clear();
+                    score = score - 100;
                 }
             }
             //france
@@ -116,6 +120,7 @@ namespace feud_final
                 {
                     MessageBox.Show("You already entered this");
                     textBox1.Clear();
+                    score = score - 100;
                 }
             }
             //belgium
@@ -134,6 +139,7 @@ namespace feud_final
                 {
                     MessageBox.Show("You already entered this");
                     textBox1.Clear();
+                    score = score - 100;
                 }
             }
             //croatia
@@ -152,6 +158,7 @@ namespace feud_final
                 {
                     MessageBox.Show("You already entered this");
                     textBox1.Clear();
+                    score = score - 100;
                 }
             }
             //spain
@@ -170,6 +177,7 @@ namespace feud_final
                 {
                     MessageBox.Show("You already entered this");
                     textBox1.Clear();
+                    score = score - 100;
                 }
             }
             //serbia
@@ -188,6 +196,7 @@ namespace feud_final
                 {
                     MessageBox.Show("You already entered this");
                     textBox1.Clear();
+                    score = score - 100;
                 }
             }
             //eng
@@ -206,35 +215,28 @@ namespace feud_final
                 {
                     MessageBox.Show("You already entered this");
                     textBox1.Clear();
+                    score = score - 100;
                 }
             }
 
-
-            // winning the game score thing
-            if (score >= 1000)
-            {
-                MessageBox.Show("CONGRATS, YOU WON! You just got all the questions right! You now earned yourself free first class tickets to all the World Cup Games in Qatar this November! See you soon!");
-            }
-
-
-            else
             // incorrect answers (x)
+            else
             {
                 lives = lives - 1;
-               if (lives == 2)
+                if (lives == 2)
                 {
                     textBox1.Clear();
                     pictureBox5.Visible = true;
                     MessageBox.Show("Incorrect. One X! If you get two more you lose!");
 
                 }
-                 else if (lives == 1)
+                else if (lives == 1)
                 {
                     textBox1.Clear();
                     pictureBox6.Visible = true;
                     MessageBox.Show("Incorrect. You now have Two X's! If you get one more you lose!");
                 }
-                 else if (lives == 0)
+                else if (lives == 0)
                 {
                     textBox1.Clear();
                     pictureBox7.Visible = true;
@@ -242,6 +244,15 @@ namespace feud_final
                     this.Close();
                 }
             }
+
+            // winning the game score thing
+            if (score >= 1000)
+            {
+                MessageBox.Show("CONGRATS, YOU WON! You just got all the questions right! You now earned yourself free first class tickets to all the World Cup Games in Qatar this November! See you soon!");
+                this.Close();          
+            }
+
+            
 
 
 
